@@ -1,21 +1,19 @@
-import 'package:dashboard/home_page.dart';
 import 'package:flutter/material.dart';
+import 'main_menu_screen.dart'; // Make sure this import points to the correct file
 
 void main() {
-  runApp(const MainApp());
+  runApp(MyApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Radio Monitoring System',
+      title: 'Radio Broadcast Monitoring System',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),
+      home: MainMenuScreen(),
     );
   }
 }
